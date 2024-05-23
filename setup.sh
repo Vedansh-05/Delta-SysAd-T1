@@ -37,7 +37,7 @@ while IFS=' ' read -r name domain mentee_capacity; do
     sudo mkdir "/home/core/mentors/$domain/$name/submittedTasks"
 
     sudo chown -R "$name:$name" "/home/core/mentors/$name"
-    sudo chmod 700 "/home/core/mentors/$name"
+    sudo chmod 700 "/home/core/mentors/$domain/$name"
     
     sudo mkdir "/home/core/mentors/$domain/$name/submittedTasks/task1"
     sudo mkdir "/home/core/mentors/$domain/$name/submittedTasks/task2"
