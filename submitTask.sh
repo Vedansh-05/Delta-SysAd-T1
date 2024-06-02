@@ -23,6 +23,10 @@ while IFS=' ', read -r mentee_name roll_number;do
             sed "s|${domain_name}-task${task_no}:n|${domain_name}-task${task_no}:y|" "/home/core/mentees/$name/task_submitted.txt"
         fi
         mkdir "/home/core/mentees/$name/$domain_name/task$task_no"
+
+        read -p "Enter github repo name:" repo
+        touch "/home/core/mentees/$name/$domain_name/task$task_no/submissions.txt"
+        echo $repo >> "/home/core/mentees/$name/$domain_name/task$task_no/submissions.txt"
     fi
 done < menteeDetails.txt
 
