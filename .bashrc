@@ -9,3 +9,5 @@ alias mentorAllocation='./mentor-allocation.sh'
 alias submitTask='./submitTask.sh'
 
 alias displayStatus='./displayStatus.sh'
+
+alias deRegister='./deregister.sh'
